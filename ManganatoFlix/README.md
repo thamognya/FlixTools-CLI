@@ -1,8 +1,14 @@
-<hr>
-
 # ManganatoFlix
 
-This is a minimalistic 5 line bash script that allows you to download and open a downloaded version of the manga of your choice. It uses zathura but that can be easily changed. It is made to be used on linux.
+This is a minimalistic 5 line bash script that allows you to download and open a downloaded version of the manga of your choice. 
+
+It uses zathura but that can be easily changed. 
+
+It downloads it in `$HOME/Documents/torrent/manga` (yes I know it is not torrenting but still) but that directory can be changed by changing line 5 varibel `DOWNLOAD_DIR`.
+
+Overall it is very customizable.
+
+*It is made to be used on linux.
 
 ## Dependencies
 
