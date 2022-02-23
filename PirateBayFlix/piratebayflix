@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 QUERY=$(printf '%s' "$*" | sed 's/ /\%20/g')
 MAGNET=$(curl -s "https://thepiratebay.party/search/$QUERY/1/99/0" -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0' | grep -Eo "magnet\:\?[a-zA-Z0-9]{2}=[a-zA-Z0-9]{3}:[a-zA-Z0-9]{4}:[a-zA-Z0-9?%-' '=.+;-]*"| head -n 1)
 webtorrent $MAGNET --mpv # to download in current directory change this to   webtorrent $MAGNET
