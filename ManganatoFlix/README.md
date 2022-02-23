@@ -2,7 +2,13 @@
 
 # ManganatoFlix
 
-This is a minimalistic 5 line bash script that allows you to download and open a downloaded version of the manga of your choice. 
+This is a minimalistic 5 line bash script that allows you to download and open a downloaded version of the manga of your choice. It uses zathura but that can be easily changed. It is made to be used on linux.
+
+## Dependencies
+
+- zathura 
+- zathura-pdf-poppler or zathura-pdf-mupdf
+- pup 
 
 ## Usage
 
