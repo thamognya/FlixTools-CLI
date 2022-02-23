@@ -1,11 +1,11 @@
-PREFIX = /usr
+PREFIX = /usr/local
 
 all:
 	@echo Run \'make install\' to install mangaflix.
 
 install:
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
-	@cp -p piratebayflix $(DESTDIR)$(PREFIX)/bin/mangaflix
+	@cp -p mangaflix $(DESTDIR)$(PREFIX)/bin/mangaflix
 	@chmod +x $(DESTDIR)$(PREFIX)/bin/mangaflix
 
 uninstall:
