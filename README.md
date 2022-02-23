@@ -1,3 +1,5 @@
 <hr>
 
-This is a place for all my Flix tools like PirateBayFlix and etc. They allow you to torrent from the cli
+# FlixTools
+
+This is a repo that contains a few shell scritping tools that can completely erase the need for any paid streaming services which I am against.

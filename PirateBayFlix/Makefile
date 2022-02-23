@@ -1,7 +1,7 @@
 PREFIX = /usr
 
 all:
-	@echo Run \'make install\' to install notflix.
+	@echo Run \'make install\' to install piratebayflix.
 
 install:
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
