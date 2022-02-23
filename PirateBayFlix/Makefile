@@ -1,4 +1,4 @@
-PREFIX = /usr
+PREFIX = /usr/local
 
 all:
 	@echo Run \'make install\' to install piratebayflix.
