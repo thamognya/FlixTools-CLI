@@ -26,7 +26,7 @@ for example
 
 ## Download 
 
-### Git
+### Git (Reccomended as you can update easily)
 
 ```sh
 git clone https://github.com/ThamognyaKodi/FlixTools.git
@@ -46,6 +46,24 @@ git pull
 cd ManganatoFlix 
 
 sudo make install
+```
+
+### Curl
+
+```sh
+curl -Lo mangaflix https://raw.githubusercontent.com/ThamognyaKodi/FlixTools/master/ManganatoFlix/mangaflix
+
+mv mangaflix /usr/local/bin/mangaflix
+```
+
+#### To Update
+
+```sh
+cd /usr/local/bin
+
+sudo rm mangaflix 
+
+sudo curl -Lo mangaflix https://raw.githubusercontent.com/ThamognyaKodi/FlixTools/master/ManganatoFlix/mangaflix
 ```
 
 ### AUR
