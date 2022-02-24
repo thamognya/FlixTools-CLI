@@ -19,6 +19,7 @@ Overall it is very customizable.
 - zathura 
 - zathura-pdf-poppler or zathura-pdf-mupdf
 - pup 
+- webtorrent-cli ; install with `npm install webtorrent-cli -g`
 
 ## Usage
 
