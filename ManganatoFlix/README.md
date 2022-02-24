@@ -10,6 +10,10 @@ Overall it is very customizable.
 
 *It is made to be used on linux.
 
+#### Linked Posts
+
+- [Mangaflix-reddit](https://www.reddit.com/r/unixporn/comments/szchcv/oc_mangaflix_minimalistic_5_line_script_to/)
+
 ## Dependencies
 
 - zathura 
