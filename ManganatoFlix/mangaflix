@@ -1,5 +1,6 @@
 #!/bin/sh
 
+DOWNLOAD_DIR="$HOME/Documents/torrent/manga/"
 # get the user input, and split it into the manga name and the chapter number
 QUERY=`printf "%s" "$*" | sed 's/ /\_/g'`
 for CHAPTER in "$@"; do :; done
@@ -41,7 +42,6 @@ curl -s "$LINK_OF_MANGA_IMAGES" -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; rv
   `
 # This line gets the image base url and the number of manga images for the for loop
 
-DOWNLOAD_DIR="$HOME/Documents/torrent/manga/"
 # IMAGE DOWNLOAD
 for ((i = 1; i <=$NUM_OF_MANGA_IMAGES; i++)); do
   curl -s "$IMG_BASE_URL$i.jpg" --output "$DOWNLOAD_DIR$MANGA_NAME$i.jpg" \
