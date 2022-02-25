@@ -1,0 +1,25 @@
+# Maintainer: Thamognya <contact at thamognya dot com>
+pkgname='mangaflix'
+_pkgname='mangaflix'
+DIR="/FlixTools/ManganatoFlix"
+pkgver=r25.2861a98
+pkgrel=1
+epoch=1
+pkgdesc="Minimalistic shell script to download manga"
+arch=('any')
+url="https://github.com/ThamognyaKodi/FlixTools/tree/master/ManganatoFlix"
+license=('GPL3')
+depends=('coreutils' 'make' 'curl' 'sed' 'awk' 'grep' 'pup' 'imagemagick' 'zathura' 'zathura-pdf-poppler')
+makedepends=('git') 
+source=('git+https://github.com/ThamognyaKodi/FlixTools.git')
+md5sums=('SKIP')
+
+pkgver() {
+	cd "$srcdir$DIR"
+    printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+package() {
+	cd "$srcdir$DIR"
+    sudo make install
+}
